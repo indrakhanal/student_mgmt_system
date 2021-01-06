@@ -1,0 +1,79 @@
+
+<div class="container" style=">
+     <div class="row">
+         <div class="col col-md-6" style=" border-style: solid; width:40%; height: 90%; margin-left: 20%;
+         align-content: center; margin-left: 300px;">
+             <h2 style="padding:-20px"><center>Kathmandu College of Technology</center></h2>
+             <h3 style=padding:-5px;"><center>Terminal exam result</center></h3>
+             <h4 style="padding:-5px"><center>Mark sheet</center></h4>
+             <hr/>
+
+            <h4 style="margin-left: 40px">Student Name:  {{marks.fullname}}</h4>
+            <h4 style="margin-left: 40px">Student Roll:  {{marks.roll_no}}</h4>
+                <hr/>
+             <table style="width:100%; border:1px solid black;">
+                   <tr>
+                    <th><center>SN</center></th>
+                    <th><center>Subject</center></th>
+                       <th><center>Pass Marks</center></th>
+                    <th><center>Obtained Marks</center></th>
+                  </tr>
+
+                  <tr>
+                      <td><center>1</center></td>
+                      <td><center>web technology</center></td>
+                      <td><center>24</center></td>
+                      <td><center>{{marks.webTech}}</center></td>
+
+                  </tr>
+                  <tr>
+                      <td><center>2</center></td>
+                      <td><center>Compiler & Design</center></td>
+                    <td><center>24</center></td>
+                    <td><center>{{marks.compiler}}</center></td>
+                  </tr>
+                  <tr>
+                      <td><center>3</center></td>
+                      <td><center>Real Time System</center></td>
+                    <td><center>32</center></td>
+                    <td><center>{{marks.rts}}</center></td>
+                  </tr>
+                  <tr>
+                      <td><center>4</center></td>
+                      <td><center>Software Engineering</center></td>
+                    <td><center>24</center></td>
+                    <td><center>{{marks.software}}</center></td>
+                  </tr>
+                  <tr>
+                      <td><center>5</center></td>
+                      <td><center>Net centric computing</center></td>
+                    <td><center>24</center></td>
+                    <td><center>{{marks.dot_net}}</center></td>
+                  </tr>
+                  <tr>
+                      <td><center>6</center></td>
+                      <td><center>E-commerce</center></td>
+                    <td><center>24</center></td>
+                    <td><center>{{marks.e_commerce}}</center></td>
+                  </tr>
+                 <br/>
+                  <tr>
+                      <td><center></center></td>
+                      <td><center><b style="color: red;"><center><b>Total</b></center></td>
+                    <td><center></center></td>
+                      <td style="color: red"><center><b>{{total}}</b></center></td>
+                  </tr>
+             </table>
+             <br/>
+             <div class="style" style="margin-left: 10px">
+             <span>Average Marks:  {{avg}}</span><br/>
+             <span>Percentage is: {{avg}}%</span><br/>
+             <span>remarks: {{remarks}}</span>
+                 {{marks.WebTech}}
+             </div>
+             <br/>
+             <br/>
+             <a  style="float: right; margin-top: 80px; text-decoration: none;" href="{%url 'after_login'%}">go to home page..</a>
+         </div>
+     </div
+</div>

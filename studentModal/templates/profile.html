@@ -1,0 +1,41 @@
+{% extends 'master1.html'%}
+
+{% block 'title'%}profile{%endblock%}
+
+{% block 'content' %}
+{%load static%}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+
+            <a href="{% url 'after_login' %}"><img src="{%static 'img/backarrow.png' %}" style="width: 15%;height: 4%;" alt="Back"></a>
+            <br/>
+            <br/>
+            <hr/>
+
+            <div class="box">
+
+                <img src="{{MEDIA_URL}}{{student.profile.url}}" class="image" style="height: 200px; width: auto;">
+                <hr/>
+                <h5>Full Name: {{student.fullname}}</h5>
+                <hr/>
+                <span><i class="fa fa-map-marker">Address: {{student.address}}</i> </span>
+                <br>
+                <span><i class="fa fa-phone">Contact No:{{student.contact}}</i> </span><br>
+                <hr/>
+                <span>Level: {{student.level}}</span><br/>
+                <hr/>
+                <span>Studying At: <a href="https://www.kct.edu.np/">{{student.college_name}}</a></span>
+
+            </div>
+        </div>
+            <br>
+            <hr/>
+        <div class="col-md-6">
+            <div class="panel panel-default"><center>About Me:</center><hr/>  <center>{{student.about}}</center></div>
+            <hr/>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

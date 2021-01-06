@@ -1,0 +1,17 @@
+{% extends  'master1.html' %}
+
+{% block 'title'%} news {%endblock%}
+
+{%block 'content'%}
+{%load static%}
+<div>
+    <h4>New Routine</h4>
+    {% for image in news %}
+        {{image}}<br><hr/>
+        {{image.file}}
+{%endfor%}
+
+</div>
+
+
+{%endblock%}

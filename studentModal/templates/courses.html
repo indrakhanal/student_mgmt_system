@@ -1,0 +1,129 @@
+{% extends  'master1.html' %}
+
+{% block 'title'%} courses {%endblock%}
+
+{% block 'content' %}
+{%load static%}
+<body>
+
+    <!--================Home Banner Area =================-->
+    <section class="banner_area">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="banner_content text-center">
+                            <h2>Courses</h2>
+                            <p>In the history of modern astronomy, there is probably no one greater leap forward than
+                                the
+                                building and launch of the space telescope known as the Hubble.</p>
+                            <div class="page_link">
+                                <a href="{% url 'after_login' %}">Home</a>
+                                <a href="{% url 'courses' %}">Courses</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Home Banner Area =================-->
+
+    <!--================ Start Popular Courses Area =================-->
+<!--    <div class="popular_courses lite_bg">-->
+<!--        <div class="container">-->
+<!--            <div class="row justify-content-center">-->
+<!--                <div class="col-lg-6">-->
+<!--                    <div class="main_title">-->
+<!--                        <h2>Popular Courses</h2>-->
+<!--                        <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first-->
+<!--                            telescope. It’s-->
+<!--                            exciting to think about setting up your own viewing station.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--                &lt;!&ndash; single course &ndash;&gt;-->
+<!--                <div class="col-lg-3 col-md-6">-->
+<!--                    <div class="single_course">-->
+<!--                        <div class="course_head overlay">-->
+<!--                            <img class="img-fluid w-100" src="{%static 'img/courses/trainer1.jpg'%}" alt="">-->
+<!--                            <div class="authr_meta">-->
+<!--                                <img src="{%static 'img/author1.png' %}" alt="">-->
+<!--                                <span>Mart Taylor</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="course_content">-->
+<!--                            <h4>-->
+<!--                                <a href="course-details.html">Learn React js beginners</a>-->
+<!--                            </h4>-->
+<!--                            <p>When television was young, there was a huge popular show based on the still popular-->
+<!--                                fictional character of-->
+<!--                                Superman.</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; single course &ndash;&gt;-->
+<!--                <div class="col-lg-3 col-md-6">-->
+<!--                    <div class="single_course">-->
+<!--                        <div class="course_head overlay">-->
+<!--                            <img class="img-fluid w-100" src="{%static 'img/courses/trainer1.jpg' %}" alt="">-->
+<!--                            <div class="authr_meta">-->
+<!--                                <img src="{%static 'img/author1.png' %}" alt="">-->
+<!--                                <span>Mart Taylor</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="course_content">-->
+<!--                            <h4>-->
+<!--                                <a href="course-details.html">Learn React js beginners</a>-->
+<!--                            </h4>-->
+<!--                            <p>When television was young, there was a huge popular show based on the still popular-->
+<!--                                fictional character of-->
+<!--                                Superman.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; single course &ndash;&gt;-->
+<!--                <div class="col-lg-3 col-md-6">-->
+<!--                    <div class="single_course">-->
+<!--                        <div class="course_head overlay">-->
+<!--                            <img class="img-fluid w-100" src="{%static 'img/courses/trainer1.jpg' %}" alt="">-->
+<!--                            <div class="authr_meta">-->
+<!--                                <img src="{%static 'img/courses/college.png' %}" alt="">-->
+<!--                                <span>Mart Taylor</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="course_content">-->
+<!--                            <h4>-->
+<!--                                <a href="course-details.html">Learn React js beginners</a>-->
+<!--                            </h4>-->
+<!--                            <p>When television was young, there was a huge popular show based on the still popular-->
+<!--                                fictional character of-->
+<!--                                Superman.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; single course &ndash;&gt;-->
+
+
+<!--&lt;!&ndash;    &lt;!&ndash; Optional JavaScript &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    &lt;!&ndash; jQuery first, then Popper.js, then Bootstrap JS &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    <script src="js/jquery-3.2.1.min.js"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;    <script src="js/popper.js"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;    <script src="js/bootstrap.min.js"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;    <script src="js/stellar.js"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;    <script src="js/owl-carousel-thumb.min.js"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;    <script src="js/jquery.ajaxchimp.min.js"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;    <script src="vendors/counter-up/jquery.counterup.js"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;    <script src="js/mail-script.js"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;    &lt;!&ndash;gmaps Js&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;    <script src="js/gmaps.min.js"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;    <script src="js/theme.js"></script>&ndash;&gt;-->
+</body>
+{%endblock%}
+</html>

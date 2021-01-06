@@ -1,0 +1,63 @@
+{% extends 'master1.html'%}
+
+{% block 'title'%} student dashboard{%endblock%}
+
+{% block 'content' %}
+{%load static%}
+<link rel="stylesheet" href=" {% static 'css/student_dashboard.css' %}">
+<body>
+<h3 style="margin-left: 250px; color: red"><b>SEARCH SECOND SEM RESULT HERE</b></h3>
+<hr/>
+      <div class="container">
+    <div class="row">
+
+        <div class="col-md-5 col-md-offset-6">
+            <p>Type your unique ID to see your result <p/>
+            {% include 'messages/message.html'%}
+            <form method="post" action="{% url 'second_sem'%}">
+                <div class="input-group">
+                    <label for="roll_no"></label>
+                    <input type="text" id="roll_no" name="roll_no" class="form-control" placeholder="enter id eg:123">
+                </div>
+                {% csrf_token %}
+                <br/>
+                <button type="submit" class="btn btn-primary">Search</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="box">
+        <div class="row">
+            <div class="col-md-3">
+                <h4><b>New Routine and News</b></h4>
+                <hr/>
+                <p>What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry Lorem Ipsum has been the industry's standard dummy
+                    text ever since the 1500s when an unknown printer took a galley of type and </p>
+            </div>
+
+            <div class="col-md-5" style="float: right">
+                <h4><b>Announcement & Events</b></h4>
+                <hr/>
+                <span><u>1.This is Event 1</u>  </span>
+                <p>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type
+                    specimen book. It has survived not only five centuries, but also the leap into
+                    electronic typesetting, remaining essentially unchanged</p>
+            </div>
+
+
+             <div class="col-md-3" style="float: right">
+                <h4><b>Upcoming Events</b></h4>
+                <hr/>
+                <p>Lorem Ipsum has been the industry's standard</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+{%endblock%}

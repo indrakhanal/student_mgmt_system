@@ -1,0 +1,70 @@
+
+<div class="container" style=">
+     <div class="row">
+         <div class="col col-md-6" style=" border-style: solid; width:40%; height: 90%; margin-left: 20%;
+         align-content: center; margin-left: 300px;">
+             <h2 style="padding:-20px"><center>Kathmandu College of Technology</center></h2>
+             <h3 style=padding:-5px;"><center>Terminal exam result</center></h3>
+             <h4 style="padding:-5px"><center>Second Sem Mark sheet</center></h4>
+             <hr/>
+
+            <h4 style="margin-left: 40px">Student Name:  {{marks.fullname}}</h4>
+            <h4 style="margin-left: 40px">Roll No:  {{marks.roll_no}}</h4>
+                <hr/>
+             <table style="width:100%; border:1px solid black;">
+                   <tr>
+                    <th><center>SN</center></th>
+                    <th><center>Subject</center></th>
+                       <th><center>Pass Marks</center></th>
+                    <th><center>Obtained Marks</center></th>
+                  </tr>
+                  <tr>
+                      <td><center>1</center></td>
+                      <td><center> Discrete Structure</center></td>
+                    <td><center>24</center></td>
+                      <td><center>{{marks.discrete}}</center></td>
+                  </tr>
+                  <tr>
+                      <td><center>2</center></td>
+                      <td><center>Mathmatics II</center></td>
+                    <td><center>24</center></td>
+                    <td><center>{{marks.math_ii}}</center></td>
+                  </tr>
+                  <tr>
+                      <td><center>3</center></td>
+                      <td><center>Microprocessor</center></td>
+                    <td><center>24</center></td>
+                    <td><center>{{marks.micro}}</center></td>
+                  </tr>
+                  <tr>
+                      <td><center>4</center></td>
+                      <td><center>Statistics I</center></td>
+                    <td><center>24</center></td>
+                    <td><center>{{marks.stat_i}}</center></td>
+                  </tr>
+                  <tr>
+                      <td><center>5</center></td>
+                      <td><center>Object Oriented Programing</center></td>
+                    <td><center>24</center></td>
+                    <td><center>{{marks.oop}}</center></td>
+                  </tr>
+                 <br/>
+                  <tr>
+                      <td><center></center></td>
+                      <td><center><b style="color: red;"><center><b>Total</b></center></td>
+                    <td><center></center></td>
+                      <td style="color: red"><center><b>{{total}}</b></center></td>
+                  </tr>
+             </table>
+             <br/>
+             <div class="style" style="margin-left: 10px">
+             <span>Average Marks:  {{avg}}</span><br/>
+             <span>Percentage is: {{avg}}%</span><br/>
+             <span>remarks: {{remarks}}</span>
+             </div>
+             <br/>
+             <br/>
+             <button class="btn btn-secondary" style="float: right; margin-top: 80px;" ><a style="text-decoration: none;" href="{%url 'after_login'%}">go to home page..</a></button>
+         </div>
+     </div
+</div>

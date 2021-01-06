@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3c9ca6f8-aebe-426e-bbde-0a10da33a048" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Tsg3S5eE9OkXUbeBGNl6nCgdU9" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dell\Desktop\newstudent\studentModal\templates\secoondsem" />
+      <recent name="C:\Users\Dell\Desktop\newstudent\studentModal\templates" />
+      <recent name="C:\Users\Dell\Desktop\newstudent\studentModal\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dell\Desktop\newstudent\studentModal\static\img\banner" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.smth">
+    <configuration name="smth" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="newstudent" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/studentModal/Marks" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/studentModal/Marks/smth.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="newstudent" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/studentModal/Student" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/studentModal/Student/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.smth" />
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3c9ca6f8-aebe-426e-bbde-0a10da33a048" name="Default Changelist" comment="" />
+      <created>1574254017798</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574254017798</updated>
+      <workItem from="1574254041941" duration="2503000" />
+      <workItem from="1574341549501" duration="10894000" />
+      <workItem from="1574404661463" duration="9467000" />
+      <workItem from="1574425348662" duration="8545000" />
+      <workItem from="1574481457427" duration="24964000" />
+      <workItem from="1574593622398" duration="8903000" />
+      <workItem from="1574666233392" duration="3927000" />
+      <workItem from="1575039253642" duration="1571000" />
+      <workItem from="1575951669138" duration="1645000" />
+      <workItem from="1575961055942" duration="1177000" />
+      <workItem from="1576152866584" duration="1819000" />
+      <workItem from="1576154751639" duration="11749000" />
+      <workItem from="1576214252101" duration="19198000" />
+      <workItem from="1576306502848" duration="13686000" />
+      <workItem from="1576340053960" duration="246000" />
+      <workItem from="1576378012008" duration="9228000" />
+      <workItem from="1576473769197" duration="6874000" />
+      <workItem from="1576507008741" duration="2089000" />
+      <workItem from="1576562719960" duration="2270000" />
+      <workItem from="1576754310249" duration="781000" />
+      <workItem from="1576926219393" duration="8267000" />
+      <workItem from="1576937680299" duration="2037000" />
+      <workItem from="1577107036579" duration="5319000" />
+      <workItem from="1578033817463" duration="595000" />
+      <workItem from="1578061159287" duration="710000" />
+      <workItem from="1582518349393" duration="633000" />
+      <workItem from="1582616083973" duration="2028000" />
+      <workItem from="1582895907871" duration="1514000" />
+      <workItem from="1582898826143" duration="2311000" />
+      <workItem from="1583329507641" duration="4189000" />
+      <workItem from="1583396116135" duration="3821000" />
+      <workItem from="1583562421818" duration="2030000" />
+      <workItem from="1583568066385" duration="8885000" />
+      <workItem from="1583676888294" duration="2025000" />
+      <workItem from="1583846942866" duration="3622000" />
+      <workItem from="1583892892423" duration="654000" />
+      <workItem from="1584285565988" duration="1040000" />
+      <workItem from="1584325222671" duration="485000" />
+      <workItem from="1586155526335" duration="1955000" />
+      <workItem from="1586323213158" duration="48000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/newstudent$test.coverage" NAME="test Coverage Results" MODIFIED="1576929979368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/studentModal/Student" />
+  </component>
+</project>

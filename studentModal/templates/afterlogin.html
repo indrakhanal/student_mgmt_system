@@ -1,0 +1,93 @@
+{% extends  'master1.html' %}
+
+{% block 'title'%} Home Page {%endblock%}
+
+
+    {%block 'logo'%}
+    <a href="{%url 'profile' %}">
+        <h3 style="float: left; color:black; margin-top: 20px; padding-right: 40px"> {{user.username}}</h3>
+        <img src="{{MEDIA_URL}}{{student.profile.url}}" style="height: 80px; width: auto; border-radius: 20%;float: left;margin-left: -10px;">
+    </a>
+    {%endblock%}
+
+
+{% block 'content' %}
+{%load static%}
+<link rel="stylesheet" href=" {% static 'css/student_dashboard.css' %}">
+
+<body>
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none; background-color: #5f3f3f; color: white;" id="mySidebar">
+        <a href="{% url 'profile' %}" class="w3-bar-item w3-button"><i class="fa fa-user-circle">Profile</i></a>
+        <button class="w3-bar-item w3-button w3-large"
+        onclick="w3_close()">Select Your Semester &nbsp; &nbsp;&nbsp; &nbsp; &times;</button>
+        <a href="{%url 'first_sem' %}" class="w3-bar-item w3-button">First Sem</a>
+        <a href="{% url 'second_sem' %}" class="w3-bar-item w3-button">Second Sem</a>
+        <a href="#" class="w3-bar-item w3-button">Third Sem</a>
+        <a href="#" class="w3-bar-item w3-button">Fourth Sem</a>
+        <a href="#" class="w3-bar-item w3-button">Fifth Sem</a>
+        <a href="{%url 'student_dashboard' %}" class="w3-bar-item w3-button">Sixth Sem</a>
+        <a href="#" class="w3-bar-item w3-button">Seventh Sem</a>
+        <a href="#" class="w3-bar-item w3-button">Eighth Sem</a>
+        <a href="{% url 'logout' %}" class="w3-bar-item w3-button">Logout</a>
+</div>
+
+        <div id="main">
+            <div class="w3-teal" style="background-color: white; ">
+                <button id="openNav"  class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+                <img src="{%static 'img/alogin.jpg'%}" style="width: 100%; height: 100%">
+                <div class="center" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                    <div class="" style="margin-left: 400px;">
+                    <span style="color: black">News And Event<hr/></span>
+
+                         <div class="input-group">
+
+                             <label for="title"></label>
+                             <a href="{% url 'news'%}"><button type="submit" id="title" name="title" class="btn btn-primary">View Recent News</button></a>
+                        <hr/>
+                        </div>
+
+                {%if item%}
+                <p style="color:red;">{{item}} news available</p>
+
+                {%endif%}
+
+                    <div class="panel panel-info">
+                    <ul>
+                        {%if sixth%}
+                        <a href="{% url 'student_dashboard'%}"><li class="list-group-item list-group-item-action">{{sixth}}</li></a></a>
+                        {%endif%}
+                        {%if first%}
+                        <a href="{% url 'first_sem'%}"><li class="list-group-item list-group-item-action">{{first}}</li></a></a>
+                        {%endif%}
+                        {%if routine%}
+                        <a href="https://www.tuiost.edu.np/notice"><li class="list-group-item list-group-item-action">{{routine}}</li></a></a>
+                        {%endif%}
+                        {%if tour%}
+                        <a href="#"><li class="list-group-item list-group-item-action">{{tour}}</li></a></a>
+                        {%endif%}
+                        {%if news%}
+                        <a href="#"><li class="list-group-item list-group-item-action">{{news.file}}</li></a></a>
+                        {%endif%}
+                    </ul>
+                    </div>
+            </div>
+        </div>
+
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+<hr/>
+<a href=" {% url 'htm_pdf'%}" style="height:100%; width:100%">View Pdf File</a>
+</body>
+{%endblock%}

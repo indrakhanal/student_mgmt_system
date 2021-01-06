@@ -1,0 +1,65 @@
+{% extends 'master1.html'%}
+
+{% block 'title'%} student dashboard{%endblock%}
+
+{% block 'content' %}
+{%load static%}
+<link rel="stylesheet" href=" {% static 'login/css/student_dashboard.css' %}">
+<body>
+
+<br/>
+<div class="container">
+    <h3 style="margin-left: 250px; color: black;"><b>For Sixth Sem Result</b></h3>
+    <hr/>
+    <div class="row">
+        <div class="col col-md-3">
+            {% include 'messages/message.html'%}
+            <form method="post" action="{% url 'marks_info'%}">
+                <div class="wrap-input100 validate-input" data-validate = "Search result here">
+                    <p>Type your unique ID to see your result</p>
+                    <label for="roll_no"></label>
+                    <input type="text" id="roll_no" name="roll_no" class="form-control-lg" placeholder="enter id eg:123">
+                    <br/>
+                        <br/>
+                    <input type="submit" value="Search" class="btn btn-primary" style="margin-left: 50px"/>
+                    <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+                </div>
+                {% csrf_token %}
+            </form>
+        </div>
+    </div>
+</div>
+
+<br/>
+    <div class="">
+        <div class="row">
+            <div class="col">
+                <h4><b>New Routine and News</b></h4>
+                <hr/>
+                {% for image in news %}
+                <b>{{image}}</b><br>
+                {%endfor%}
+                <img src="{{MEDIA_URL}} {{news.profile.url}}">
+                {{news.file}}
+            </div>
+
+            <div class="col-md-5">
+                <h4><b>Announcement & Events</b></h4>
+                <hr/>
+                {% for image in news %}
+                <b>{{image}}</b><br>
+                {%endfor%}
+                <img src="{{MEDIA_URL}}{{news.profile.url}}">
+            </div>
+
+            <div class="col-md-3" style="float: right">
+                <h4><b>Upcoming Events</b></h4>
+                <hr/>
+            </div>
+        </div>
+    </div>
+        <br/>
+        <br/>
+</body>
+{%endblock%}
+
